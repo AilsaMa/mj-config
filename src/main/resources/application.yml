@@ -1,0 +1,20 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri:
+          search-paths: /springcloud-config/src/main/resources/properties
+          default-label: master
+          username: ailsama
+          password: Majun1990
+
+eureka.instance.prefer-ip-address: true
+#2.0ÐÂÌØÐÔspring.cloud.client.ip-address
+eureka.instance.instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+eureka.client.serviceUrl.defaultZone: http://root:root@localhost:9999/eureka/
+
