@@ -1,8 +1,4 @@
-server:
-  port: 1334
 spring:
-  application:
-    name: config-service
   cloud:
     config:
       server:
@@ -12,10 +8,4 @@ spring:
           default-label: master
           username: ailsama
           password: Majun1990
-
-eureka.instance.prefer-ip-address: true
-eureka.instance.instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
-eureka.client.serviceUrl.defaultZone: http://root:root@localhost:9999/eureka/
-eureka.instance.lease-renewal-interval-in-seconds: 5
-eureka.instance.lease-expiration-duration-in-seconds: 10
 
