@@ -1,5 +1,5 @@
 server:
-  port: 6666
+  port: 1333
 spring:
   application:
     name: config-service
@@ -8,7 +8,7 @@ spring:
       server:
         git:
           uri: https://github.com/AilsaMa/springcloud-config.git
-          search-paths: /springcloud-config/src/main/resources/properties
+          search-paths: /**
           default-label: master
           username: ailsama
           password: Majun1990
