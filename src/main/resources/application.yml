@@ -3,7 +3,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/AilsaMa/springcloud-config.git
+          uri: https://github.com/AilsaMa/mj-config.git
           search-paths: /**
           default-label: master
           username: ailsama
