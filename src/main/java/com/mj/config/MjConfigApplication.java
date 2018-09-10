@@ -1,4 +1,4 @@
-package com.mj.springcloudconfig;
+package com.mj.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,9 +8,9 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableConfigServer
-public class SpringcloudConfigApplication {
+public class MjConfigApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringcloudConfigApplication.class, args);
+		SpringApplication.run(MjConfigApplication.class, args);
 	}
 }
